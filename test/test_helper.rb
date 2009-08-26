@@ -1,7 +1,7 @@
 require 'test/unit'
 
 require 'rubygems'
-require 'flexmock/test_unit'
+# require 'flexmock/test_unit'
 require 'active_support'
 require 'active_support/test_case'
 
