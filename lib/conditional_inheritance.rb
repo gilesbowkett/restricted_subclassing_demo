@@ -1,6 +1,5 @@
 class ConditionalInheritance
   def self.inherited(subclass)
-    raise RequiredClassMethodAbsent
-    # blow up unless given a class method...hmm actually how will I do this?
+    raise RequiredClassMethodAbsent unless subclass.respond_to? :i_stopped_partying_and_went_back_to_college
   end
 end
