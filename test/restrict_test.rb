@@ -10,7 +10,7 @@ class RestrictTest < ActiveSupport::TestCase
 
   test "classes can impose inheritance conditions" do
     GrandpaHilton = ConditionalInheritance
-    assert_raise YouCantInheritFromMe do
+    assert_raise RequiredClassMethodAbsent do
       class Paris2 < GrandpaHilton ; end
     end
     assert_nothing_raised do
